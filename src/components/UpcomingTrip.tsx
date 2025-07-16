@@ -1,61 +1,61 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import ImageSlider from "./ImageSlider"; // Import the reusable ImageSlider component
-import { trendingDestinations, feedbackVideo,UpcomingTrips,SpitiLadakhTrips,HimachalTrips} from "./Text"; // Import the required data
-import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
+import ImageSlider from "./ImageSlider";
+import { trendingDestinations, feedbackVideo, SpitiLadakhTrips, HimachalTrips, UttarPradesh } from "./Text";
+import { useNavigate } from "react-router-dom";
 
 const UpcomingTrip: React.FC = () => {
   const navigate = useNavigate();
 
   const handleCardClick = (destinationName: string) => {
-    navigate(`/destination/${destinationName}`); // Navigate to the destination page
+    navigate(`/destination/${destinationName}`);
   };
 
   return (
     <Box sx={{ padding: "20px" }}>
-      {/* Trending Destinations Section */}
       <Box sx={{ padding: "20px" }}>
-        <Typography variant="h5" gutterBottom>
-        </Typography>
-        <ImageSlider
-          title="Trending Destinations"
-          images={trendingDestinations.map((image) => ({
+        <Typography variant="h5" gutterBottom />
+        <ImageSlider 
+          title="Uttar Pradesh" 
+          images={UttarPradesh.map((image) => ({
             ...image,
-            onClick: () => handleCardClick(image.alt), // Pass the click handler for navigation
-          }))}
+            onClick: () => handleCardClick(image.alt),
+          }))} 
         />
       </Box>
 
       <Box sx={{ padding: "20px" }}>
-        <Typography variant="h5" gutterBottom>
-        </Typography>
-        <ImageSlider title="Upcoming Trips" images={UpcomingTrips} />
+        <Typography variant="h5" gutterBottom />
+        <ImageSlider 
+          title="SpitiLadakh Trips" 
+          images={SpitiLadakhTrips.map((image) => ({
+            ...image,
+            onClick: () => handleCardClick(image.alt),
+          }))} 
+        />
       </Box>
-
-
-        {/* Feedback Videos Section */}
-        <Box sx={{ padding: "20px" }}>
-        <Typography variant="h5" gutterBottom>
-        </Typography>
-        <ImageSlider title="SpitiLadakh Trips" images={SpitiLadakhTrips} />
-      </Box>
-
-
-      {/* Feedback Videos Section */}
-      <Box sx={{ padding: "20px" }}>
-        <Typography variant="h5" gutterBottom>
-        </Typography>
-        <ImageSlider title="HimachalTrips" images={HimachalTrips} />
-      </Box>
-
 
       <Box sx={{ padding: "20px" }}>
-        <Typography variant="h5" gutterBottom>
-        </Typography>
-        <ImageSlider title="FeedbackVideo" images={feedbackVideo} />
+        <Typography variant="h5" gutterBottom />
+        <ImageSlider 
+          title="HimachalTrips" 
+          images={HimachalTrips.map((image) => ({
+            ...image,
+            onClick: () => handleCardClick(image.alt),
+          }))} 
+        />
       </Box>
 
-
+      <Box sx={{ padding: "20px" }}>
+        <Typography variant="h5" gutterBottom />
+        <ImageSlider 
+          title="FeedbackVideo" 
+          images={feedbackVideo.map((image) => ({
+            ...image,
+            onClick: () => handleCardClick(image.alt),
+          }))} 
+        />
+      </Box>
     </Box>
   );
 };

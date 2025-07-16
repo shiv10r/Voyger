@@ -43,99 +43,96 @@ export const marqueeContent = {
 
 // Accommodation images
 export const accommodationImages = [
-  { src: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWx8ZW58MHx8MHx8fDA%3D", alt: "Hotel" },
-  { src: "https://plus.unsplash.com/premium_photo-1661964402307-02267d1423f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG90ZWwlMjByb29tfGVufDB8fDB8fHww", alt: "Room" },
-  { src: "https://plus.unsplash.com/premium_photo-1661875135365-16aab794632f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGhvdGVsJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D", alt: "Resort" },
-  { src: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdGVsfGVufDB8fDB8fHww", alt: "Villa" },
-  { src: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhvdGVsfGVufDB8fDB8fHww", alt: "Beach Villa" },
-
+  { id: 1, src: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", alt: "Hotel" },
+  { id: 2, src: "https://plus.unsplash.com/premium_photo-1661964402307-02267d1423f5", alt: "Room" },
+  { id: 3, src: "https://plus.unsplash.com/premium_photo-1661875135365-16aab794632f", alt: "Resort" },
+  { id: 4, src: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4", alt: "Villa" },
+  { id: 5, src: "https://images.unsplash.com/photo-1582719508461-905c673771fd", alt: "Beach Villa" }
 ];
 
 // Gallery images
 export const galleryImages = [
-  { src: "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHRyaXB8ZW58MHx8MHx8fDA%3D", alt: "Nature" },
-  { src: "https://plus.unsplash.com/premium_photo-1687653070774-87704dca1730?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHRyaXB8ZW58MHx8MHx8fDA%3D", alt: "Beach" },
-  { src: "https://plus.unsplash.com/premium_photo-1682390303252-4e1e31e692e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dHJpcHxlbnwwfHwwfHx8MA%3D%3D", alt: "Forest" },
-  { src: "https://images.unsplash.com/photo-1606054534744-a3b13e35c574?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHRyaXB8ZW58MHx8MHx8fDA%3D", alt: "Mountain" },
-  { src: "https://images.unsplash.com/photo-1648416501050-59ebefbb2a15?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjI4fHx0cmlwfGVufDB8fDB8fHww", alt: "Trekking" },
+  { id: 1, src: "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d", alt: "Nature" },
+  { id: 2, src: "https://plus.unsplash.com/premium_photo-1687653070774-87704dca1730", alt: "Beach" },
+  { id: 3, src: "https://plus.unsplash.com/premium_photo-1682390303252-4e1e31e692e4", alt: "Forest" },
+  { id: 4, src: "https://images.unsplash.com/photo-1606054534744-a3b13e35c574", alt: "Mountain" },
+  { id: 5, src: "https://images.unsplash.com/photo-1648416501050-59ebefbb2a15", alt: "Trekking" }
 ];
-
 
 export const trendingDestinations = [
-  { src: "https://plus.unsplash.com/premium_photo-1661949303004-bab6b7a82912?w=500&auto=format&fit=crop&q=60", alt: "Nature" },
-  { src: "https://plus.unsplash.com/premium_photo-1661886836347-5738ab3b7728?w=500&auto=format&fit=crop&q=60", alt: "Nature" },
-  { src:"https://images.unsplash.com/photo-1566323124805-757e5c41d37c?w=500&auto=format&fit=crop&q=60", alt: "Nature" },
-  {src: "https://plus.unsplash.com/premium_photo-1697730113415-b33b83fe77c4?q=80&w=1170&auto=format&fit=crop", alt: "Nature" },
-  {src: "https://images.unsplash.com/photo-1566323124805-757e5c41d37c?w=500&auto=format&fit=crop&q=60",  alt: "Nature" },
-  {src: "https://images.unsplash.com/photo-1624890240392-da0b1aa01c90?w=500&auto=format&fit=crop&q=60", alt: "Nature" },
+  { id: 1, src: "https://plus.unsplash.com/premium_photo-1661949303004-bab6b7a82912", alt: "Nature" },
+  { id: 2, src: "https://plus.unsplash.com/premium_photo-1661886836347-5738ab3b7728", alt: "Nature" },
+  { id: 3, src: "https://images.unsplash.com/photo-1566323124805-757e5c41d37c", alt: "Nature" },
+  { id: 4, src: "https://plus.unsplash.com/premium_photo-1697730113415-b33b83fe77c4", alt: "Nature" },
+  { id: 5, src: "https://images.unsplash.com/photo-1566323124805-757e5c41d37c", alt: "Nature" },
+  { id: 6, src: "https://images.unsplash.com/photo-1624890240392-da0b1aa01c90", alt: "Nature" }
 ];
 
-
-export const UpcomingTrips = [
-  { src: "https://plus.unsplash.com/premium_photo-1661949303004-bab6b7a82912?w=500&auto=format&fit=crop&q=60", alt: "Nature" },
-  { src: "https://plus.unsplash.com/premium_photo-1661886836347-5738ab3b7728?w=500&auto=format&fit=crop&q=60", alt: "Nature" },
-  { src:"https://images.unsplash.com/photo-1566323124805-757e5c41d37c?w=500&auto=format&fit=crop&q=60", alt: "Nature" },
-  {src: "https://plus.unsplash.com/premium_photo-1697730113415-b33b83fe77c4?q=80&w=1170&auto=format&fit=crop", alt: "Nature" },
-  {src: "https://images.unsplash.com/photo-1566323124805-757e5c41d37c?w=500&auto=format&fit=crop&q=60",  alt: "Nature" },
-  {src: "https://images.unsplash.com/photo-1624890240392-da0b1aa01c90?w=500&auto=format&fit=crop&q=60", alt: "Nature" },
+export const UttarPradesh = [
+  { id: 1, src: "https://images.unsplash.com/photo-1571536802807-30451e3955d8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dmFyYW5hc2l8ZW58MHx8MHx8fDA%3D", alt: "Varanasi" },
+  { id: 2, src: "https://images.unsplash.com/photo-1627894483216-2138af692e32", alt: "Varanasi Ghats" },
+  { id: 3, src: "https://plus.unsplash.com/premium_photo-1697730409550-71858318f4c8", alt: "Ayodhya Ram Mandir" },
+  { id: 4, src: "https://media.istockphoto.com/id/1381030718/photo/barsana-holi-one-of-the-most-joyful-festival-of-india-this-is-birth-place-of-radha-lord.jpg?s=1024x1024&w=is&k=20&c=ecLMXSVrZNP5RJMOcNUorBzWM9Jn5uGAsCw7WLL2riA=", alt: "Mathura" },
+  { id: 5, src: "https://images.unsplash.com/photo-1647671195638-2a7cf32e3dbd", alt: "Krishna Janmabhoomi Mathura" },
+  { id: 6, src: "https://images.unsplash.com/photo-1659544457000-d3e7dadcc026", alt: "Prayagraj Sangam" },
+  { id: 7, src: "https://plus.unsplash.com/premium_photo-1694475572292-5f19c8a188c6", alt: "Vindhyachal Temple" },
+  { id: 8, src: "https://images.unsplash.com/photo-1645344273898-7fd1e33803c2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJheWFncmFqfGVufDB8fDB8fHww", alt: "Prayagraj Kumbh" }
 ];
-
-
 
 export const SpitiLadakhTrips = [
-  { src: "https://plus.unsplash.com/premium_photo-1661949303004-bab6b7a82912?w=500&auto=format&fit=crop&q=60", alt: "Nature" },
-  { src: "https://plus.unsplash.com/premium_photo-1661886836347-5738ab3b7728?w=500&auto=format&fit=crop&q=60", alt: "Nature" },
-  { src:"https://images.unsplash.com/photo-1566323124805-757e5c41d37c?w=500&auto=format&fit=crop&q=60", alt: "Nature" },
-  {src: "https://plus.unsplash.com/premium_photo-1697730113415-b33b83fe77c4?q=80&w=1170&auto=format&fit=crop", alt: "Nature" },
-  {src: "https://images.unsplash.com/photo-1566323124805-757e5c41d37c?w=500&auto=format&fit=crop&q=60",  alt: "Nature" },
-  {src: "https://images.unsplash.com/photo-1624890240392-da0b1aa01c90?w=500&auto=format&fit=crop&q=60", alt: "Nature" },
+  { id: 1, src: "https://images.unsplash.com/photo-1546919921-64d1fb873098", alt: "Pangong Lake" },
+  { id: 2, src: "https://images.unsplash.com/photo-1624890240392-da0b1aa01c90", alt: "Nubra Valley" },
+  { id: 3, src: "https://images.unsplash.com/photo-1580389915863-f9bc9ff15bd9", alt: "Key Monastery" },
+  { id: 4, src: "https://images.unsplash.com/photo-1636788236886-90de63beab48", alt: "Khardung La Pass" },
+  { id: 5, src: "https://images.unsplash.com/photo-1650952079621-96c056af4bde", alt: "Chandratal Lake" }
 ];
 
+export const Uttarakhand = [
+  { id: 1, src: "https://images.unsplash.com/photo-1619837374214-f5b9eb80876d", alt: "Rishikesh" },
+  { id: 2, src: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23", alt: "Kedarnath Temple" },
+  { id: 3, src: "https://images.unsplash.com/photo-1613067532651-7075a620c900", alt: "Nainital Lake" },
+  { id: 4, src: "https://images.unsplash.com/photo-1588085579148-069c3d7c161d", alt: "Mussoorie" },
+  { id: 5, src: "https://images.unsplash.com/photo-1623161551727-10d04eef50e9", alt: "Valley of Flowers" },
+  { id: 6, src: "https://images.unsplash.com/photo-1582650625112-567c7a12eb11", alt: "Auli" },
+  { id: 7, src: "https://images.unsplash.com/photo-1587474260584-136574528ed5", alt: "Badrinath Temple" },
+  { id: 8, src: "https://images.unsplash.com/photo-1624890240392-da0b1aa01c90", alt: "Jim Corbett National Park" }
+];
 
 export const HimachalTrips = [
-  { src: "https://plus.unsplash.com/premium_photo-1661949303004-bab6b7a82912?w=500&auto=format&fit=crop&q=60", alt: "Nature" },
-  { src: "https://plus.unsplash.com/premium_photo-1661886836347-5738ab3b7728?w=500&auto=format&fit=crop&q=60", alt: "Nature" },
-  { src:"https://images.unsplash.com/photo-1566323124805-757e5c41d37c?w=500&auto=format&fit=crop&q=60", alt: "Nature" },
-  {src: "https://plus.unsplash.com/premium_photo-1697730113415-b33b83fe77c4?q=80&w=1170&auto=format&fit=crop", alt: "Nature" },
-  {src: "https://images.unsplash.com/photo-1566323124805-757e5c41d37c?w=500&auto=format&fit=crop&q=60",  alt: "Nature" },
-  {src: "https://images.unsplash.com/photo-1624890240392-da0b1aa01c90?w=500&auto=format&fit=crop&q=60", alt: "Nature" },
+  { id: 1, src: "https://images.unsplash.com/photo-1607144113358-9d8dd893a647", alt: "Spiti Valley" },
+  { id: 2, src: "https://images.unsplash.com/photo-1597167231350-d057a45dc868", alt: "Manali" },
+  { id: 3, src: "https://images.unsplash.com/photo-1652501834567-937de29c4533", alt: "Manikaran" },
+  { id: 4, src: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23", alt: "Shimla" },
+  { id: 5, src: "https://images.unsplash.com/photo-1622225074638-1d80c0388697", alt: "Dharamshala" },
+  { id: 6, src: "https://images.unsplash.com/photo-1609920658906-8223bd289001", alt: "Kasol" }
 ];
 
-
-
-
-// Gallery images
 export const feedbackVideo = [
-  {
-    src: "https://plus.unsplash.com/premium_photo-1661939833710-6a7548ceacb9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwJTIwYWlyJTIwZm9yY2V8ZW58MHx8MHx8fDA%3D", alt: "Nature"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1604768402994-b8d664517b81?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aW5kaWFuJTIwJTIwbmF2eXxlbnwwfHwwfHx8MA%3D%3D",alt: "Nature"
-  },
-  {
-    src: "https://images.unsplash.com/flagged/photo-1560177776-55a762c5c000?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXJteXxlbnwwfHwwfHx8MA%3D%3D",alt: "Nature"
-  }
+  { id: 1, src: "https://plus.unsplash.com/premium_photo-1661939833710-6a7548ceacb9", alt: "Nature" },
+  { id: 2, src: "https://images.unsplash.com/photo-1604768402994-b8d664517b81", alt: "Nature" },
+  { id: 3, src: "https://images.unsplash.com/flagged/photo-1560177776-55a762c5c000", alt: "Nature" }
 ];
-
 
 export const Videos = [
-  {
-    src: "https://plus.unsplash.com/premium_photo-1661939833710-6a7548ceacb9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwJTIwYWlyJTIwZm9yY2V8ZW58MHx8MHx8fDA%3D",
+  { 
+    id: 1,
+    src: "https://plus.unsplash.com/premium_photo-1661939833710-6a7548ceacb9",
     alt: "AirForce",
-    link: "https://youtu.be/IaGqZ-jV2XQ?si=cE7sSEps2sIJzRRK",
+    link: "https://youtu.be/IaGqZ-jV2XQ?si=cE7sSEps2sIJzRRK"
   },
   {
-    src: "https://images.unsplash.com/photo-1604768402994-b8d664517b81?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aW5kaWFuJTIwJTIwbmF2eXxlbnwwfHwwfHx8MA%3D%3D",
+    id: 2, 
+    src: "https://images.unsplash.com/photo-1604768402994-b8d664517b81",
     alt: "Navy",
-    link: "https://www.youtube.com/watch?v=-XfRU8pB-Io&pp=ygUbaW5kaWFuIG5hdnkgcHJvbW90aW9uIHZpZG9l",
+    link: "https://www.youtube.com/watch?v=-XfRU8pB-Io&pp=ygUbaW5kaWFuIG5hdnkgcHJvbW90aW9uIHZpZG9l"
   },
   {
-    src: "https://images.unsplash.com/flagged/photo-1560177776-55a762c5c000?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXJteXxlbnwwfHwwfHx8MA%3D%3D",
+    id: 3,
+    src: "https://images.unsplash.com/flagged/photo-1560177776-55a762c5c000",
     alt: "Army",
-    link: "https://www.youtube.com/watch?v=fS-cxg2Bi3M&pp=ygUdaW5kaWFuIGFybXkgIHByb21vdGlvbiB2aWRlbyA%3D",
+    link: "https://www.youtube.com/watch?v=fS-cxg2Bi3M&pp=ygUdaW5kaWFuIGFybXkgIHByb21vdGlvbiB2aWRlbyA%3D"
   }
 ];
-
 
 // Notes Card Component
 export const NotesCard: React.FC = () => (
