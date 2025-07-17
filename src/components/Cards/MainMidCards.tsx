@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Card, CardContent, Typography, Button } from "@mui/material";
-import { useNavigate } from "react-router-dom";
 import StarIcon from "@mui/icons-material/Star"; // For review ratings
 import VerifiedIcon from "@mui/icons-material/Verified"; // For certifications
 import GoogleIcon from "@mui/icons-material/Google"; // Google logo
@@ -31,7 +30,6 @@ interface CardData {
 }
 
 const MainMidCards: React.FC = () => {
-  const navigate = useNavigate(); // Initialize useNavigate for navigation
 
   const cardData: CardData[] = [
     {

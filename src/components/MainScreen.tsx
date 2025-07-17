@@ -12,8 +12,6 @@ import {
   Box,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import ImageSlider from "./ImageSlider"; // Import the reusable ImageSlider component
-import { trendingDestinations } from "./Text"; // Import trendingDestinations from Text.tsx
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import Connect from "./Connect";
 import UpcomingTrip from "./UpcomingTrip";
@@ -43,9 +41,7 @@ const MainScreen: React.FC<MainScreenProps> = ({ username, onLogout }) => {
     setIsDrawerOpen(open);
   };
 
-  const handleCardClick = (destinationName: string) => {
-    navigate(`/destination/${destinationName}`); // Navigate to the SecondaryScreen with the destination name
-  };
+
 
   return (
     <Box>

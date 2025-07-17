@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Box, IconButton, Drawer, List, ListItem, ListItemText, Toolbar, AppBar, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
-import { NotesCard, MarqueeButtons, accommodationImages, galleryImages, marqueeContent, Videos } from "./Text";
+import {  accommodationImages, galleryImages, Videos } from "./Text";
 import ImageSlider from "./ImageSlider";
 import TripDetailsCard from "./TripDetailsCard";
 import Feedback from "./Feedback";
@@ -14,8 +14,7 @@ import Contact from "./Contact";
 
 const SecondaryScreen: React.FC = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [selectedTab, setSelectedTab] = useState<keyof typeof marqueeContent>("cancellation");
-  const [selectedTrip, setSelectedTrip] = useState<"Himachal" | "Ladakh">("Himachal");
+  const [selectedTrip] = useState<"Himachal" | "Ladakh">("Himachal");
   const navigate = useNavigate();
 
   const menuOptions = [

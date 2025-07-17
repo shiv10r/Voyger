@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import ImageSlider from "./ImageSlider";
-import { trendingDestinations, feedbackVideo, SpitiLadakhTrips, HimachalTrips, UttarPradesh } from "./Text";
+import {  feedbackVideo, SpitiLadakhTrips, HimachalTrips, UttarPradesh } from "./Text";
 import { useNavigate } from "react-router-dom";
 
 const UpcomingTrip: React.FC = () => {
