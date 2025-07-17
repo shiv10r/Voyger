@@ -1,0 +1,11 @@
+.formCard {
+  padding: 16px;
+  box-shadow: none;
+  background-color: #f9f9f9;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

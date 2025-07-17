@@ -1,15 +1,30 @@
 import React, { useState } from "react";
-import { Box, Typography, Button, Card, CardContent } from "@mui/material";
-import Dropdown from "react-bootstrap/Dropdown";
+import {
+  Box,
+  Typography,
+  Button,
+  Card,
+  CardContent,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails
+} from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import CallbackForm from "./../components/Cards/CallbackForm"; // Adjust the import path as necessary
+import Grid from "@mui/material/Grid";
 
 const DayWisePlan: React.FC = () => {
   const [activeTab, setActiveTab] = useState<"DayWisePlan" | "DaysCosting" | "Inclusion">("DayWisePlan");
+  const [openForm, setOpenForm] = useState(false);
 
-  const dayPlans: Record<"Day1" | "Day2" | "Day3" | "Day4", string[]> = {
-    Day1: ["Activity 1: Arrival at Destination", "Activity 2: Sightseeing", "Activity 3: Dinner and Rest"],
-    Day2: ["Activity 4: Morning Trek", "Activity 5: Lunch Break", "Activity 6: Evening Campfire"],
-    Day3: ["Activity 7: Adventure Activities", "Activity 8: Local Market Visit", "Activity 9: Departure Prep"],
-    Day4: ["Activity 10: Departure", "Activity 11: Feedback Session", "Activity 12: Goodbye"],
+  const handleOpenForm = () => setOpenForm(true);
+  const handleCloseForm = () => setOpenForm(false);
+
+  const dayPlans = {
+    Day1: ["Arrival at Destination", "Sightseeing", "Dinner and Rest"],
+    Day2: ["Morning Trek", "Lunch Break", "Evening Campfire"],
+    Day3: ["Adventure Activities", "Local Market Visit", "Departure Prep"],
+    Day4: ["Departure", "Feedback Session", "Goodbye"],
   };
 
   const costingDates = [
@@ -19,93 +34,75 @@ const DayWisePlan: React.FC = () => {
   ];
 
   const inclusionDetails = [
-    "• Entire travel as per the itinerary.",
-    "• 6 meals will be provided throughout the trip (From Dinner on Day 2 to Breakfast on Day 5).",
-    "• Accommodation for 2 Night Stay in Manali Hotel and 1 night stay in Kasol Camp/ Hotel.",
-    "• Pick up and drop off from Delhi or Chandigarh.",
-    "• Experienced Trip Captain.",
-    "• Music Night & bonfire (If Weather Allows).",
-    "• All tolls, taxes & parking charges.",
-    "• Full on Enjoyment & Lifetime Memories.",
+    "Entire travel as per itinerary",
+    "6 meals provided (Dinner on Day 2 to Breakfast on Day 5)",
+    "2 Nights in Manali Hotel, 1 Night Kasol Camp",
+    "Pickup/drop from Delhi or Chandigarh",
+    "Experienced Trip Captain",
+    "Bonfire & music (weather dependent)",
+    "All tolls, taxes, parking charges",
+    "Full enjoyment & lifetime memories",
   ];
 
   return (
-    <Box
-      sx={{
-        width: "100%",
-        padding: "20px",
-        backgroundColor: "#f9f9f9",
-        borderRadius: "8px",
-      }}
-    >
+    <Box sx={{ p: 3, bgcolor: "#f9f9f9", borderRadius: 2 }}>
       <Typography variant="h5" gutterBottom>
         Day Wise Plan
       </Typography>
 
-      {/* Horizontal Buttons */}
-      <Box sx={{ display: "flex", gap: 2, marginBottom: "20px" }}>
+      {/* Tabs */}
+      <Box sx={{ display: "flex", gap: 2, mb: 3 }}>
         <Button
           variant={activeTab === "DayWisePlan" ? "contained" : "outlined"}
-          color="primary"
           onClick={() => setActiveTab("DayWisePlan")}
         >
           Day Wise Plan
         </Button>
         <Button
           variant={activeTab === "DaysCosting" ? "contained" : "outlined"}
-          color="primary"
           onClick={() => setActiveTab("DaysCosting")}
         >
           Days & Costing
         </Button>
         <Button
           variant={activeTab === "Inclusion" ? "contained" : "outlined"}
-          color="primary"
           onClick={() => setActiveTab("Inclusion")}
         >
           Inclusion
         </Button>
       </Box>
 
-      {/* Content Section */}
+      {/* Content */}
       {activeTab === "DayWisePlan" && (
-        <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
-          {(Object.keys(dayPlans) as Array<"Day1" | "Day2" | "Day3" | "Day4">).map((day) => (
-            <Dropdown key={day}>
-              <Dropdown.Toggle variant="primary" id={`dropdown-${day}`}>
-                {day}
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Card sx={{ width: "300px", margin: "10px", backgroundColor: "#f5f5f5" }}>
-                  <CardContent>
-                    <Typography variant="h6" gutterBottom>
-                      {day} Activities
+        <Grid container spacing={2}>
+          {Object.entries(dayPlans).map(([day, activities]) => (
+            <Grid item xs={12} md={6} key={day}>
+              <Accordion>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                  <Typography variant="h6">{day}</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  {activities.map((activity, idx) => (
+                    <Typography key={idx} variant="body2" gutterBottom>
+                      • {activity}
                     </Typography>
-                    {dayPlans[day].map((activity, idx) => (
-                      <Typography key={idx} variant="body2" sx={{ marginBottom: "10px" }}>
-                        {activity}
-                      </Typography>
-                    ))}
-                  </CardContent>
-                </Card>
-              </Dropdown.Menu>
-            </Dropdown>
+                  ))}
+                </AccordionDetails>
+              </Accordion>
+            </Grid>
           ))}
-        </Box>
+        </Grid>
       )}
 
       {activeTab === "DaysCosting" && (
         <Box>
-          <Typography variant="h6" gutterBottom>
-            Dates
-          </Typography>
+          <Typography variant="h6">Upcoming Dates</Typography>
           {costingDates.map((date, idx) => (
-            <Typography key={idx} variant="body2" sx={{ marginBottom: "10px" }}>
-              {date}
+            <Typography key={idx} variant="body2" gutterBottom>
+              • {date}
             </Typography>
           ))}
-          <Button variant="contained" color="secondary" sx={{ marginTop: "10px" }}>
+          <Button variant="contained" sx={{ mt: 2 }} onClick={handleOpenForm}>
             Book Now
           </Button>
         </Box>
@@ -113,16 +110,17 @@ const DayWisePlan: React.FC = () => {
 
       {activeTab === "Inclusion" && (
         <Box>
-          <Typography variant="h6" gutterBottom>
-            Inclusion
-          </Typography>
+          <Typography variant="h6">What's Included</Typography>
           {inclusionDetails.map((detail, idx) => (
-            <Typography key={idx} variant="body2" sx={{ marginBottom: "10px" }}>
-              {detail}
+            <Typography key={idx} variant="body2" gutterBottom>
+              • {detail}
             </Typography>
           ))}
         </Box>
       )}
+
+      {/* Callback Form Dialog */}
+      <CallbackForm open={openForm} handleClose={handleCloseForm} />
     </Box>
   );
 };

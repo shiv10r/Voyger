@@ -4,7 +4,7 @@ import MainScreen from "./MainScreen";
 import SecondaryScreen from "./SecondaryScreen";
 
 const App: React.FC = () => {
-  const [currentUser, setCurrentUser] = useState<string>("John Doe");
+  const [currentUser, setCurrentUser] = useState<string>("Shivanshu");
 
   const handleLogout = () => {
     console.log("User logged out");
